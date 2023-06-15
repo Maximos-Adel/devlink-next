@@ -1,0 +1,20 @@
+.component-section-wrapper {
+  display: flex;
+  padding: 5em 1.5em;
+  flex-direction: column;
+  grid-row-gap: 3em;
+}
+
+@media screen and (max-width: 767px) {
+  .component-section-wrapper {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
+}
+
+.component-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid hsla(245.1428571428571, 44.87%, 30.59%, 0.45);
+}

@@ -1,0 +1,143 @@
+.component-section-wrapper {
+  display: flex;
+  padding: 5em 1.5em;
+  flex-direction: column;
+  grid-row-gap: 3em;
+}
+
+@media screen and (max-width: 767px) {
+  .component-section-wrapper {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
+}
+
+.component-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid hsla(245.1428571428571, 44.87%, 30.59%, 0.45);
+}
+
+.section {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.section.hero {
+  position: relative;
+  min-height: 600px;
+  background-color: var(--clrPrimary600-aeaf7110);
+  color: var(--clrNeutral100-f9191126);
+}
+
+.section.title {
+  background-color: var(--clrPrimary400-6c00fdf1);
+  color: var(--clrPrimary999-b0a60ce1);
+}
+
+.section.pricing-gradient {
+  background-image: radial-gradient(circle farthest-corner at 50% 100%, var(--clrPrimary400-6c00fdf1), var(--clrPrimary999-b0a60ce1) 73%);
+  color: var(--clrNeutral100-f9191126);
+}
+
+.section.pricing {
+  position: relative;
+  padding-top: 5em;
+  color: hsla(329.9999999999999, 0.00%, 100.00%, 1.00);
+  text-align: center;
+}
+
+.clr-secondary-400 {
+  background-color: var(--clrSecondary400-685c3959);
+}
+
+.clr-primary-400 {
+  background-color: var(--clrPrimary400-6c00fdf1);
+}
+
+.section.features {
+  color: var(--clrPrimary600-aeaf7110);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+}
+
+.container.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container.narrow {
+  max-width: 720px;
+}
+
+.container.rel {
+  position: relative;
+  z-index: 2;
+}
+
+.center {
+  text-align: center;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-logo {
+  width: 250px;
+  margin-bottom: 2em;
+}
+
+.testimonial {
+  max-width: 80ch;
+  margin-bottom: 2em;
+}
+
+.testomonial-image-wrapper {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 2em;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-meta {
+  display: flex;
+  grid-column-gap: 0.5em;
+}
+
+@media screen and (max-width: 479px) {
+  .testimonial-meta {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .testimonial-bullet {
+    display: none;
+  }
+}
